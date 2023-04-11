@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../static/CSS/style.css">
+    </head>
+    <body>
+<section id="hero" class="d-flex flex-column justify-content-center">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-8">
+                <h1>Identifying Patterns and Trends in Campus Placement Data using Machine Learning</h1>
+            </div>
+        </div>
+    </div>
+</section><!--End Hero-->
+
+<section id="about" class="about">
+    <div class="container">
+        <div class="section-title">
+            <h2>Fill the details</h2>
+        </div>
+        <div class="row content">
+            <div class="first">
+                <form action="{{url_for('y_predict')}}" method="POST">
+                    <input type="number" id="sen1" name="sen1" placeholder="Age"><br><br>
+                    <input type="number" id="sen2" name="sen2" placeholder="Gender M(0),F(1)"><br><br>
+                    <input type="number" id="sen3" name="sen3" placeholder="Stream CS(0),IT(1),ECE(2),Mech(3),EEE(4),Civil(5)"><br><br>
+                    <input type="number" id="sen4" name="sen4" placeholder="Internships"><br><br>
+                    <input type="number" id="sen5" name="sen5" placeholder="CGPA"><br><br>
+                    <input type="number" id="sen6" name="sen6" placeholder="Number of backlogs"><br><br>
+                    <input type="submit" value="submit">
+                </form>
+            </div>
+        </div>
+    </div>
+</section><!--End about us section-->
+    </body>
+</html>
